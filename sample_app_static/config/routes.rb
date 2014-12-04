@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  # this line calls the static page controller and home action in that.
+  root 'static_pages#home'
+
+  #get 'static_pages/home'
 
   get 'static_pages/help'
+
+  get 'static_pages/about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
