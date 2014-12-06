@@ -1,0 +1,81 @@
+@import "bootstrap";
+
+
+
+html {
+  overflow-y:scroll;
+  overflow-x:scroll
+}
+
+#logo {
+float: left;
+margin-right: 20px;
+font-size: 1.7em;
+color: #F85266;
+text-transform: uppercase;
+letter-spacing: 1px;
+padding-top: 9px;
+/* font-weight: bold; */
+line-height: 1;
+}
+
+body{
+  padding-top: 60px;
+}
+
+section{
+  ovrflow: auto;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.center{
+  text-align: center;
+}
+
+.center h1{
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+margin-top: 45px;
+padding-top: 5px;
+border-top: 1px solid #eaeaea;
+color: #999;
+}
+
+
+footer a {
+color: #555;
+}
+
+footer a:hover {
+color: #222;
+}
+
+
+footer small {
+float: left;
+}
+
+footer ul {
+float: right;
+list-style: none;
+}
+
+
+footer ul li {
+float: left;
+margin-left: 10px;
+}
+
+.header-color{
+background-color: blue;
+}
+
+.header-height{
+  height: 80px;
+}
