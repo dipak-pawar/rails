@@ -1,5 +1,14 @@
 == README
 rails generate controller StaticPages home help
+
+How to add bootstrap framework to our aplication
+ 1.Add gem 'bootstrap-sass', '2.0.0'
+ 2.create app/assets/stylesheets/custom.css.scss
+ 3.Import @bootstrap
+ 4.partial layout instead of all in layout/aplication
+ 5.asset pipeline so all assets gets combined in one to serve less request so response should be go faster.
+ 6.nested synatax ,variables
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
