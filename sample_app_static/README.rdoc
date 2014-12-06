@@ -7,10 +7,13 @@ How to add bootstrap framework to our aplication
  3.Import @bootstrap
  4.partial layout instead of all in layout/aplication
  5.asset pipeline so all assets gets combined in one to serve less request so response should be go faster.
- 6.nested synatax ,variables
+ 6.SCSS only adds features to CSS, rather than defining an entirely new syntax
+ 7.nested synatax ,variables
+ 8.Geneartion of new controller along with its action
+    rails generate controller Users new
 
 This README would normally document whatever steps are necessary to get the
-application up and running.
+application up and running.now
 
 Things you may want to cover:
 
