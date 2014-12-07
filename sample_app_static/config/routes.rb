@@ -1,5 +1,6 @@
 SampleAppStatic::Application.routes.draw do  # this line calls the static page controller and home action in that.
-root 'static_pages#home'
+resources :users
+root to: 'static_pages#home'
 
 get 'help' => 'static_pages#help'
 get 'home' => 'static_pages#home'
