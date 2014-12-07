@@ -1,5 +1,5 @@
 == README
-rails generate controller StaticPages home help
+Rails generate controller StaticPages home help
 
 How to add bootstrap framework to our aplication
  1.Add gem 'bootstrap-sass', '2.0.0'
@@ -11,6 +11,22 @@ How to add bootstrap framework to our aplication
  7.nested synatax ,variables
  8.Geneartion of new controller along with its action
     rails generate controller Users new
+
+ 9.User model:
+     rails g model User(model name) name:string,email:string
+     bundle exec rake db:migrate
+     some rails console stuff
+      * create and save user using "obj=User.new" & obj.save
+      * User.create
+      * obj.name , obj.email, obj.created_at , obj.updated_at , User.first , User.last , User.find_by_name("user name"),User.all,User.find(its index(1))
+     Updating user objects
+      * after updating user object.you should save it to database using "obj.save".Otherwise it
+        wouldn't be save.and after doing "obj.reload" it will reload the databse object value.
+      * you can updates object using "obj.update attributes(name: "The Dude", email: "dude@abides.org")
+      Validations ===
+       * update your validation in models accordingly.
+      validates :name, presence: true, length: { maximum: 50 }
+      Using uniqueness valiadations if two request goes simultaneously then two objects gets save in our database.so you must add database level uniqueness as well
 
 This README would normally document whatever steps are necessary to get the
 application up and running.now
