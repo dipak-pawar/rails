@@ -8,6 +8,9 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+#Added this gem to  irreversibly encrypt the password
+gem 'bcrypt-ruby', '3.0.1'
+
 # Added this to give css effects using bootstrap
 gem 'bootstrap-sass', '2.0.0'
 # Use Uglifier as compressor for JavaScript assets

@@ -28,6 +28,8 @@ How to add bootstrap framework to our aplication
       validates :name, presence: true, length: { maximum: 50 }
       Using uniqueness valiadations if two request goes simultaneously then two objects gets save in our database.so you must add database level uniqueness as well
 
+      Adding migration dot to add index to users  email usinng "rails generate migration add_index_to_users_email"
+
 This README would normally document whatever steps are necessary to get the
 application up and running.now
 
