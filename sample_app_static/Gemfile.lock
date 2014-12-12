@@ -118,11 +118,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  bcrypt-ruby (= 3.0.1)
-=======
   bcrypt-ruby (= 3.1.2)
->>>>>>> sign_up_2
   bootstrap-sass (= 2.0.0)
   byebug
   coffee-rails (~> 4.0.0)
