@@ -1,5 +1,6 @@
 SampleAppStatic::Application.routes.draw do  # this line calls the static page controller and home action in that.
 resources :users
+resources :sessions, only:[:new,:create,:destroy]
 root to: 'static_pages#home'
 
 get 'help' => 'static_pages#help'
@@ -7,6 +8,10 @@ get 'home' => 'static_pages#home'
 get 'about' => 'static_pages#about'
 get 'contact' => 'static_pages#contact'
 get 'signup' => 'users#new'
+
+match '/signin', to: 'sessions#new' ,via: [:get,:post]
+match '/signout', to: 'sessions#destroy', via: :delete
+match '/signup', to: 'users#new' ,via: [:get,:post]
 
  #get 'static_pages/help'
  #get 'static_pages/about'
