@@ -97,7 +97,7 @@ box-sizing: border-box;
 aside {
 section {
 padding: 10px 0;
-border-top: 1px solid $grayLighter;
+border-top: 1px;
 &:first-child {
 border: 0;
 padding-top: 0;
@@ -144,4 +144,18 @@ margin: 0 0 18px 0;
 
 .center_signup {
 padding-left: 400px;
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
